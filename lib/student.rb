@@ -3,6 +3,21 @@ require_relative "../config/environment.rb"
 class Student
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]
+
+  
+  
+
+end
+
+
+
+
+
+
+
+
+=begin 
+
   attr_accessor :name, :grade
   attr_writer :id 
   
@@ -68,6 +83,4 @@ class Student
     end.first
   end
   
-  
-
-end
+  =end
