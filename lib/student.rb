@@ -11,5 +11,14 @@ class Student
     @grade = grade
     @id = id
   end
+  
+  def self.create_table
+    sql = <<-SQL
+      CREATE TABLE students(
+      );
+    SQL
+    
+    DB[:conn].execute(sql)
+  end
 
 end
