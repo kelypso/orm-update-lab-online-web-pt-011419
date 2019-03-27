@@ -67,6 +67,8 @@ class Student
       SET name = ?, grade = ?
       WHERE name = ?
     SQL
+    
+    DB[:conn].execute(sql, self.name, self.grade, self.name)
   end
 
 end
